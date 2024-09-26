@@ -6,21 +6,22 @@
 # faturamento_janeiro = []
 # from random import randint
 # for c in range(0, 30, 1):
-#     faturamento_janeiro.append(randint(70, 200))
+#      faturamento_janeiro.append(randint(70, 200))
 
-# c = 0
-# with open('q03/faturamento/fevereiro.json', 'w') as file:
-#     file.write('[')
-#     for i in faturamento_janeiro:
-#         c += 1
-#         file.write('{' + f'"{c}": {str(i)}' + '}' + ', \n')
-#     file.write(']')
+# # c = 0
+# with open('q03/faturamento/janeiro.json', 'w') as file:
+#      file.write('[')
+#      for i in faturamento_janeiro:
+#          file.write(f'{str(i)}, ')
+#      file.write(']')
 
 
 import json
 
 with open('q03/faturamento/janeiro.json', 'r') as arquivo:
-    faturamento_janeiro = json.load(arquivo)
+    dadosjaneiro = json.load(arquivo)
+
+faturamento_janeiro = list(dadosjaneiro)
 
 print(f'Faturamento em 30 dias de janeiro: {faturamento_janeiro}')
 soma = 0
