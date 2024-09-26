@@ -1,22 +1,6 @@
-#  3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que desejar, que calcule e retorne:
-#  • O menor valor de faturamento ocorrido em um dia do mês;
-#  • O maior valor de faturamento ocorrido em um dia do mês;
-#  • Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
-
-# faturamento_janeiro = []
-# from random import randint
-# for c in range(0, 30, 1):
-#      faturamento_janeiro.append(randint(70, 200))
-
-# # c = 0
-# with open('q03/faturamento/janeiro.json', 'w') as file:
-#      file.write('[')
-#      for i in faturamento_janeiro:
-#          file.write(f'{str(i)}, ')
-#      file.write(']')
-
-
 import json
+
+# Caso queria ver o de fevereiro, somente mudar a linha abaixo para 'fevereiro.json'
 
 with open('q03/faturamento/janeiro.json', 'r') as arquivo:
     dadosjaneiro = json.load(arquivo)
